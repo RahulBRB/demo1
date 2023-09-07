@@ -1,0 +1,149 @@
+*{
+    margin: none !important;
+    padding: 0 !important;
+    
+}
+body{
+    background-color: black;
+}
+
+.first-section{
+    margin: none !important;
+    background-image: linear-gradient(rgb(0, 0, 0) ,transparent ,rgba(0, 0, 0, 0.653) , rgb(0, 0, 0)) ,url(../images/netflix_background_img.jpg);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.second-section{
+    margin: none !important;
+    padding: none !important;
+}
+.feature-section{
+    
+    background-color: black;
+}
+.feature-section-text{
+    margin-top: 2rem !important;
+    padding: 1.5rem !important;
+}
+.tv-img{
+    padding: 3rem !important;
+}
+.third-section{
+    background-color: black;
+}
+/* Centers horizontally */
+.qna{
+    padding: 3rem;
+    margin: 0 auto;
+  }
+  /* Button default resets */
+  button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+  }
+  /* Styling the accordion buttons */
+  .accordion{
+    height: 4rem;
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2.5rem !important;    
+    margin-bottom: 0.5rem;
+    text-align: left;
+    /*  To push the plus sign to the right  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* adding the "plus" sign (+) */ 
+  .accordion::after{
+    content: '\02795';
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .panel{
+    background-color: #303030;
+    color: #fff;
+    margin-bottom: 4px;
+    overflow: hidden;
+  }
+  .panel > p {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .panel-closed{
+    max-height: 0;
+    overflow: hidden;
+  }
+.fourth-section{
+    background-color: black;
+    padding: 3rem;
+}
+.footer-links{
+    color: #d7d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+}
+.color-grey{
+    color: #d7d3d3;
+}
+.hr-rule{
+    margin: none !important;
+    padding: none !important;
+    height: 0.55rem !important;
+    color: grey;
+}
+@media screen and (max-width:788px) {  //0px to 788px
+    .sub-section-1{
+        margin: 2rem 2rem 0rem 2rem !important;
+        padding: 2rem !important;
+    }
+    .first-section{
+        width:fit-content;
+        height: fit-content;
+    }
+    .hide-display{
+        display: none;
+    }
+    .input-btn{
+        width: 80%;
+        margin: 1rem !important;
+        padding: 0.5rem !important;
+    }
+    .getting-started-btn{
+        width: 80%;
+        margin: 1rem !important;
+        padding: 0.5rem !important;
+    }
+    .tv-img{
+        height: 400px !important;
+        width: 400px !important;
+        padding: 2rem !important;
+    }
+    .feature-section{
+        padding: 2rem !important;
+    }
+}
+
+@media screen and (min-width:789px) {
+    .input-btn{
+        margin-left: 1rem;
+        width: 60%;
+        padding: 0.5rem !important;
+       
+    }
+    .getting-started-btn{
+        width: 40%;
+        /* padding: 0.5rem !important; */
+    }
+}
+
+
